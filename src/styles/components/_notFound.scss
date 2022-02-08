@@ -1,0 +1,13 @@
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: -10em;
+  left: 0;
+  width: 100%;
+
+  img {
+    align-items: center;
+    width: 100%;
+  }
+}

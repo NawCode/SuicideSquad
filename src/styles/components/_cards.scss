@@ -1,0 +1,174 @@
+.containerHeroes {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  top: 50px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 5.2em;
+
+  .heroes {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 280px;
+    height: 368px;
+    transition: transform 0.1s;
+    margin: 10px;
+    background-size: cover;
+    border: 1px solid grey;
+    background-position: center center;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.719);
+    margin: 0 2em 2em 2em;
+
+    .title {
+      position: relative;
+      width: 100%;
+      height: 30px;
+      background-color: #ffffffb9;
+      border-radius: 10px 10px 0 0;
+
+      h1 {
+        font-size: 1.5em;
+        margin: 2px 0 5px 10px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+      .spec {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        top: 20px;
+        right: 0;
+        z-index: 60;
+
+        .alignment {
+          background-size: cover;
+          width: 40px;
+          height: 40px;
+          background-position: center center;
+          border-radius: 5px;
+          padding: 2px;
+          margin: 0 5px 15px 0;
+
+          &.bad {
+            background-image: url('../../images/diable.png');
+            background-color: white;
+            padding: 5px;
+          }
+          &.good {
+            background-image: url('../../images/ailes-de-séraphin.png');
+            background-color: white;
+            padding: 5px;
+          }
+          &.react {
+            background-image: url('../../images/react.png');
+            background-color: white;
+            padding: 5px;
+          }
+          &.symfony {
+            background-image: url('../../images/symfony.png');
+            background-color: white;
+            padding: 5px;
+          }
+        }
+        .attack {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 15px;
+          height: 15px;
+          border: 1px solid black;
+          background-color: rgba(255, 81, 0, 0.87);
+          box-shadow: 0px 3px 3px rgb(110, 107, 107);
+          border-radius: 50% 50%;
+          padding: 10px;
+          margin-top: 5px;
+          z-index: 60;
+        }
+        .neutre {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 15px;
+          height: 15px;
+          border: 1px solid black;
+          background-color: rgba(81, 255, 0, 0.87);
+          box-shadow: 0px 3px 3px rgb(110, 107, 107);
+          border-radius: 50% 50%;
+          padding: 10px;
+          margin: 20px 0 20px 0;
+          z-index: 60;
+        }
+        .defense {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 15px;
+          height: 15px;
+          border: 1px solid black;
+          background-color: rgba(204, 0, 255, 0.87);
+          box-shadow: 0px 3px 3px rgb(110, 107, 107);
+          border-radius: 50% 50%;
+          padding: 10px;
+          margin-top: 5px;
+          z-index: 60;
+        }
+      }
+    }
+
+    .picture {
+      background-size: contain;
+      background-position: center center;
+      width: 270px;
+      height: 200px;
+    }
+    .texte {
+      position: absolute;
+      bottom: 20px;
+      background-color: rgba(255, 255, 255, 0.555);
+      width: 100%;
+      height: 100px;
+      li {
+        list-style: none;
+        margin: 5px;
+      }
+    }
+    .basicModale {
+      position: absolute;
+      bottom: 0;
+      z-index: 2;
+      margin: 10px;
+      border: 2px solid white;
+    }
+
+    footer {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: xx-small;
+      bottom: 0;
+      width: 100%;
+      height: 20px;
+      border-radius: 0 0 5px 5px;
+      background-color: #ffffff80;
+    }
+  }
+
+  .heroes:hover {
+    box-shadow: 3px 3px 3px rgb(0, 217, 255);
+    z-index: 50;
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.03);
+  }
+}

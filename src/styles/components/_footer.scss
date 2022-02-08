@@ -1,0 +1,123 @@
+.main-footer {
+  color: #ffffff;
+  background: #c11c29;
+  padding: 1.2em 0.8em 0.8em 0.8em;
+  width: auto;
+  font-family: 'Roboto';
+  font-weight: bold;
+
+  .row1 {
+    display: flex;
+    justify-content: space-around;
+
+    .footer-cat {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 0.8em;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0.8em 20px 0.8em 20px;
+
+      li {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 2em;
+
+        a:link {
+          color: white;
+          text-decoration: none;
+          padding: 0.2em;
+          border-radius: 3px;
+        }
+
+        a:visited {
+          color: white;
+        }
+
+        a:hover {
+          color: #c11c29;
+          background: white;
+        }
+      }
+    }
+
+    .contactForm {
+      display: flex;
+      flex-direction: column;
+      padding: 0.8em 20px 0.8em 20px;
+
+      label,
+      input,
+      textarea {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      }
+
+      label {
+        margin: 0 0 0.2em 0;
+      }
+
+      input {
+        height: 1.6em;
+        border: 1px solid #ffffff;
+        border-radius: 3px;
+        padding: 0.2em;
+        margin: 0 0 0.6em 0;
+      }
+
+      textarea {
+        height: 4em;
+        order: 1px solid #ffffff;
+        border-radius: 3px;
+        padding: 0.2em;
+      }
+
+      .buttonSend {
+        background: #c11c29;
+        border: 1px solid #c11c29;
+        border-radius: 4px;
+        box-shadow: 0 0 3px 1px #ffffff;
+        box-sizing: border-box;
+        color: #ffffff;
+        font-weight: bold;
+        cursor: pointer;
+        line-height: 140%;
+        margin-top: 0.8em;
+        transition: 0.4s;
+        padding: 0.2em;
+      }
+
+      .buttonSend:hover {
+        background-color: #ffffff;
+        border: 1px solid #ffffff;
+        background-position: 0 0;
+        color: #c11c29;
+      }
+    }
+
+    .vertical {
+      border: 1px solid #ffffff;
+      border-radius: 1px;
+      box-shadow: 0 0 6px #ffffff;
+      height: 10em;
+      margin-top: 2.8em;
+    }
+  }
+
+  .line {
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    box-shadow: 0 0 4px #ffffff;
+    width: 50%;
+    margin: 0.8em auto;
+  }
+
+  .row2 {
+    display: flex;
+    justify-content: center;
+    margin: 1.6em 0 0.8em 0;
+  }
+}
